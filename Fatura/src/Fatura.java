@@ -7,7 +7,9 @@ public class Fatura {
 	public double obtemPreco() {
 		
 	}
-	public void adicionarItem(int i);
+	public void adicionarItem(int i) {
+		
+	}
 	
 	public String getNome() {
 		return nome;
@@ -29,8 +31,6 @@ public class Fatura {
 	public void setItens(Item[] itens) {
 		this.itens = itens;
 	}
-	
-	
 	
 	
 }
