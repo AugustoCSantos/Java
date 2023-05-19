@@ -53,8 +53,11 @@ public class Fatura {
 			System.out.println("Quantidade: " + item.getQuantidade());
 			System.out.println("Preco: " + item.getPrecoUnitario());
 			System.out.println(".......");
-		}
-				
+		}//gerar recibo
+		
+		Fatura fatura = new Fatura("Bruno", "4456176515");
+		double totalFatura = fatura.obtemPreco();
+		System.out.println("Total: " + totalFatura);
 		
 	}
 	
