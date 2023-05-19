@@ -58,6 +58,10 @@ public class Fatura {
 		Fatura fatura = new Fatura("Bruno", "4456176515");
 		fatura.setItens(carrinho);
 		
+		System.out.println("Nome: " + fatura.getNome());
+		System.out.println("Cpf: " + fatura.getCpf());
+		System.out.println(".......");
+		
 		for (Item item : carrinho) {
 			System.out.println("Item: " + item.getNome());
 			System.out.println("Quantidade: " + item.getQuantidade());
