@@ -5,6 +5,12 @@ public class Item {
 	private double precoUnitario;
 	private String Nome;
 	
+	public Item(int quantidade, double precoUnitario, String Nome){
+		this.quantidade = quantidade;
+		this.Nome = Nome;
+		this.precoUnitario = precoUnitario;
+	}
+	
 	public int getQuantidade() {
 		return quantidade;
 	}
