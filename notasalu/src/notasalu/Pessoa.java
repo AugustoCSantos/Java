@@ -1,3 +1,4 @@
+package notasalu;
 
 public class Pessoa {
 	protected String nome;
@@ -21,7 +22,5 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	
-	
 
 }

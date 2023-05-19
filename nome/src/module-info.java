@@ -5,5 +5,5 @@
  * @author USER
  *
  */
-module NotasAluno {
+module nome {
 }

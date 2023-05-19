@@ -1,9 +1,10 @@
+package notasalu;
 
-public class Nota {
+public class Notas {
 	private String data;
 	private double valor;
 	
-	public Nota(String data, double valor) {
+	public Notas(String data, double valor) {
 		this.data = data;
 		this.valor = valor;
 	}

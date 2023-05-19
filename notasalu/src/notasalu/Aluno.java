@@ -1,14 +1,15 @@
+package notasalu;
+
 import java.util.ArrayList;
 
 public class Aluno extends Pessoa {
 	ArrayList<Double> notas = new ArrayList<Double>();
 	
 	
-	private Nota[] notas;
-	
 	public Aluno(String nome, String cpf) {
 		super(nome, cpf);
-		this.notas = new nota;
+		this.nome = nome;
+		this.cpf = cpf;
 	}
 	
 	public void addNota(double nota) {
@@ -22,16 +23,15 @@ public class Aluno extends Pessoa {
 		}
 		
 	return notaFinal/2;
-		
 	}
 	
 	public static void main(String [] args) {
-		Aluno Augusto = new Aluno("Augusto", "54215732");
+		Aluno augusto = new Aluno("Augusto", "54215732");
 		
-		Augusto.addNota(9.0);
-		Augusto.addNota(7.0);
+		augusto.addNota(9.0);
+		augusto.addNota(7.0);
 		
-		double notaFinal = Augusto.getMedia();
+		double notaFinal = augusto.getMedia();
 		System.out.println("Media: " + notaFinal);
 	}
 
