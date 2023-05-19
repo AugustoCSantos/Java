@@ -48,6 +48,8 @@ public class Fatura {
 		carrinho.add(mortadela);
 		carrinho.add(queijo); //adicionar item
 		
+		Fatura fatura = new Fatura("Bruno", "4456176515");
+		
 		for (Item item : carrinho) {
 			System.out.println("Item: " + item.getNome());
 			System.out.println("Quantidade: " + item.getQuantidade());
@@ -55,7 +57,6 @@ public class Fatura {
 			System.out.println(".......");
 		}//gerar recibo
 		
-		Fatura fatura = new Fatura("Bruno", "4456176515");
 		double totalFatura = fatura.obtemPreco();
 		System.out.println("Total: " + totalFatura);
 		
