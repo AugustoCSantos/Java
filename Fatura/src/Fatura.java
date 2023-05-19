@@ -23,6 +23,13 @@ public class Fatura {
 		itens.add(item);
 	}
 	
+	public ArrayList<Item> getItens() {
+		return itens;
+	}
+	public void setItens(ArrayList<Item> itens) {
+		this.itens = itens;
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -40,15 +47,16 @@ public class Fatura {
 	public static void main(String [] args) {
 		ArrayList<Item> carrinho = new ArrayList();
 		
-		Item pao = new Item(8, 3.00, "Pao frances");
-		Item mortadela = new Item(100, 5.00, "Mortadela");
-		Item queijo = new Item(300, 15.00, "Queijo"); //criar itens
+		Item pao = new Item(1, 3.00, "Pao de forma");
+		Item mortadela = new Item(1, 5.00, "Mortadela");
+		Item queijo = new Item(1, 15.00, "Queijo"); //criar itens
 		
 		carrinho.add(pao);
 		carrinho.add(mortadela);
 		carrinho.add(queijo); //adicionar item
 		
 		Fatura fatura = new Fatura("Bruno", "4456176515");
+		fatura.setItens(carrinho);
 		
 		for (Item item : carrinho) {
 			System.out.println("Item: " + item.getNome());
@@ -56,6 +64,7 @@ public class Fatura {
 			System.out.println("Preco: " + item.getPrecoUnitario());
 			System.out.println(".......");
 		}//gerar recibo
+		
 		
 		double totalFatura = fatura.obtemPreco();
 		System.out.println("Total: " + totalFatura);
