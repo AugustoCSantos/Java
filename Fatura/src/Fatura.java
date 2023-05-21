@@ -19,7 +19,7 @@ public class Fatura {
 		return precoFinal;
 	}
 	
-	public void adicionarItem(int i, Item item) {
+	public void adicionarItem(Item item) {
 		itens.add(item);
 	}
 	
